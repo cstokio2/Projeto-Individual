@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horizontes</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/styles_index.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-transparent">
+    <a class="fixed-logo" href="#">
+      <img src="./image/Horizonte.png" class="logo" alt="Logo Horizontes Turismo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link-menu" href="#">Destinos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link-menu" href="#">Ofertas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link-menu" href="#">Contato</a>
+        </li>
+      </ul>
+      <a class="btn btn-outline-dark" href="./pages/login.html">Entrar</a>
+    </div>
+  </nav>
+
+
+
+  <div class="video-background">
+    <video autoplay loop muted playsinline>
+      <source src="./image/fundo.mp4" type="video/mp4">
+    </video>
+    <div class="container form-container mt-5 text-white">
+      <h1 class="text-center">Planeje sua Viagem</h1>
+      <form id="travel-form">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="departure-date">Data de Ida</label>
+            <input type="date" class="form-control" id="departure-date" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="return-date">Data de Volta</label>
+            <input type="date" class="form-control" id="return-date" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="destination">Destino</label>
+            <select class="form-control" id="destination" required>
+              <option value="">Selecione o Destino</option>
+              <option value="angra">Angra dos Reis</option>
+              <option value="maragogi">Maragogi</option>
+              <option value="chapada">Chapada dos Veadeiros</option>
+            </select>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="people">Quantidade de Pessoas</label>
+            <input type="number" class="form-control" id="people" min="1" max="10" required>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Pesquisar</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row mt-5">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="image/AngraDosReis.png" class="card-img-top" alt="Angra dos Reis">
+          <div class="card-body">
+            <h5 class="card-title">Angra dos Reis</h5>
+            <p class="card-text">Descubra as deslumbrantes praias e ilhas paradisíacas de Angra dos Reis. Um paraíso
+              tropical perfeito para relaxar, explorar e se aventurar. Aproveite a beleza natural e as águas cristalinas
+              deste destino incrível.</p>
+          </div>
+          <p class="card-avaliacao card-text"><small class="text-muted">Avaliações: ★★★★★</small></p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="image/maragogi.png" class="card-img-top" alt="Maragogi">
+          <div class="card-body">
+            <h5 class="card-title">Maragogi</h5>
+            <p class="card-text">Explore as magníficas piscinas naturais de Maragogi, conhecidas como o 'Caribe
+              Brasileiro'. Desfrute de praias de areia branca, águas cristalinas e uma incrível biodiversidade marinha.
+              Um destino imperdível para os amantes da natureza.</p>
+          </div>
+          <p class="card-avaliacao card-text"><small class="text-muted">Avaliações: ★★★★☆</small></p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="image/ChapadadosVeadeiros.png" class="card-img-top" alt="Maragogi">
+          <div class="card-body">
+            <h5 class="card-title">Chapada dos Veadeiros</h5>
+            <p class="card-text">Explore as deslumbrantes cachoeiras e trilhas da Chapada dos Veadeiros. Um
+              paraíso ecológico repleto de biodiversidade, paisagens incríveis e aventuras inesquecíveis. Perfeito
+              para os amantes da natureza e do ecoturismo.</p>
+          </div>
+          <p class="card-avaliacao card-text"><small class="text-muted">Avaliações: ★★★☆☆</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <h2 class="text-center custom-title">Ofertas Especiais</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <img src="image/ChapadaDasMesas.png" class="card-img-top" alt="Chapada das Mesas">
+          <div class="card-body">
+            <h5 class="card-title">Chapada das Mesas</h5>
+            <p class="card-text short-text">
+              <strong>Preço:</strong> A partir de R$ 3.130,00<br>
+              <strong>Duração:</strong> 6 dias e 5 noites<br>
+              <strong>Saídas:</strong> Terças e Feriados<br>
+              <strong>Inclui:</strong> Transporte de e para o aeroporto, hospedagem em pousadas de qualidade, refeições
+              (café da manhã, almoço e jantar), guias especializados, passeios em veículos 4x4, e entrada para os
+              principais pontos turísticos da região.<br>
+              <strong>Atrações:</strong> Portal da Chapada das Mesas, Cachoeira do Talho, Cachoeira do Dodô, Cachoeira
+              do São Romão, Cachoeira da Pedra Caída, e muito mais.<br>
+              <strong>Exclusivo:</strong> Acomodação em pousadas com excelentes avaliações, acesso a cachoeiras e
+              trilhas exclusivas, e experiências culturais com a comunidade local.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card">
+          <img src="image/LagoaAguaLimpa.png" class="card-img-top" alt="Lagoa de Água Limpa">
+          <div class="card-body">
+            <h5 class="card-title">Lagoa Água Limpa</h5>
+            <p class="card-text short-text">
+              <strong>Preço:</strong> A partir de R$ 2.750,00<br>
+              <strong>Duração:</strong> 5 dias e 4 noites<br>
+              <strong>Saídas:</strong> Quintas e Sábados<br>
+              <strong>Inclui:</strong> Transporte de e para o aeroporto, hospedagem em hotéis confortáveis, refeições
+              (café da manhã e jantar), guias locais experientes, passeios de barco pela lagoa, e entrada para áreas de
+              preservação.<br>
+              <strong>Atrações:</strong> Passeio de barco na Lagoa de Água Limpa, trilhas ecológicas, banho em águas
+              cristalinas, observação de aves, e visita a comunidades ribeirinhas.<br>
+              <strong>Exclusivo:</strong> Acesso a áreas de preservação ambiental, encontros com a fauna e flora locais,
+              e experiências culturais autênticas com a população local.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer bg-light mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Horizontes Turismo</h5>
+          <p>Descubra o mundo conosco. Oferecemos as melhores experiências de viagem para você e sua família.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Contato</h5>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-map-marker-alt"></i> Avenida Principal, 123, Medicilândia, PA, Brasil</li>
+            <li><i class="fas fa-phone-alt"></i> (91) 1234-5678</li>
+            <li><i class="fas fa-envelope"></i> contato@explorandohorizontes.com.br</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Redes Sociais</h5>
+          <ul class="list-unstyled">
+            <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col text-center">
+          <p>&copy; 2025 Explorando Horizontes. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
