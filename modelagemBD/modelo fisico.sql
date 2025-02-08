@@ -1,5 +1,3 @@
-# Projeto-Individual
-
 create database horizonte_turismo;
 
 -- Tabela Destino
