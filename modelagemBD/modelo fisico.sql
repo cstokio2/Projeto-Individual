@@ -29,7 +29,8 @@ CREATE TABLE Contato (
     ID INT PRIMARY KEY,
     Endereço VARCHAR(255),
     Telefone VARCHAR(50),
-    Email VARCHAR(100)
+    Email VARCHAR(100),
+    nome VARCHAR(100)
 );
 
 -- Tabela Usuário

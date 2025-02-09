@@ -1,57 +1,31 @@
-# Projeto-Individual
+# Projeto de Agência de Viagens
 
-create database horizonte_turismo;
+Este é um projeto individual desenvolvido para o curso da Recode Pro. O objetivo deste projeto é criar a estrutura inicial de um site para uma agência de viagens fictícia, focando na apresentação visual e no planejamento do banco de dados. Nesta primeira etapa, não é necessário implementar funcionalidades dinâmicas ou sistemas interativos.
 
--- Tabela Destino
-CREATE TABLE Destino (
-    ID INT PRIMARY KEY,
-    Nome VARCHAR(255),
-    Descrição TEXT,
-    Avaliação INT,
-    Imagem VARCHAR(255)
-);
+## Objetivo
 
--- Tabela Oferta
-CREATE TABLE Oferta (
-    ID INT PRIMARY KEY,
-    Título VARCHAR(255),
-    Preço DECIMAL(10, 2),
-    Duração VARCHAR(255),
-    Saídas VARCHAR(255),
-    Inclusões TEXT,
-    Atrações TEXT,
-    Exclusividades TEXT,
-    Imagem VARCHAR(255),
-    Destino_ID INT,
-    FOREIGN KEY (Destino_ID) REFERENCES Destino(ID)
-);
+O objetivo é desenvolver uma solução inicial para uma agência de viagens, estruturando tanto a interface quanto o planejamento do banco de dados, criando uma base sólida para o projeto alinhada às melhores práticas de desenvolvimento web.
 
--- Tabela Contato
-CREATE TABLE Contato (
-    ID INT PRIMARY KEY,
-    Endereço VARCHAR(255),
-    Telefone VARCHAR(50),
-    Email VARCHAR(100)
-);
+## Estrutura do Projeto
 
--- Tabela Usuário
-CREATE TABLE Usuário (
-    ID INT PRIMARY KEY,
-    Nome VARCHAR(255),
-    Email VARCHAR(100),
-    Telefone VARCHAR(50)
-);
+### 1. Interface de Usuário
 
--- Tabela Reserva
-CREATE TABLE Reserva (
-    ID INT PRIMARY KEY,
-    Data_Ida DATE,
-    Data_Volta DATE,
-    Quantidade_Pessoas INT,
-    Destino_ID INT,
-    Usuário_ID INT,
-    FOREIGN KEY (Destino_ID) REFERENCES Destino(ID),
-    FOREIGN KEY (Usuário_ID) REFERENCES Usuário(ID)
-);
+A interface do usuário foi desenvolvida utilizando HTML, CSS e Bootstrap. A página inicial contém um formulário de contato com os seguintes campos:
+- Nome
+- Endereço
+- Email
+- Telefone
 
-use horizonte_turismo;
+### 2. Planejamento do Banco de Dados
+
+O planejamento do banco de dados inclui a definição das tabelas e seus relacionamentos para armazenar informações relevantes da agência de viagens. Aqui está um esboço das tabelas principais:
+
+- **Clientes**: Armazena informações dos clientes, como nome, endereço, email e telefone.
+- **Destinos**: Armazena informações dos destinos de viagem oferecidos pela agência.
+- **Reservas**: Armazena informações das reservas feitas pelos clientes.
+
+### Tecnologias Utilizadas
+
+- **HTML5**: Utilizado para a estruturação das páginas web.
+- **CSS3**: Utilizado para a estilização das páginas, com um arquivo CSS externo para melhor organização.
+- **Bootstrap 4**: Utilizado para garantir responsividade e facilitar o desenvolvimento da interface.
