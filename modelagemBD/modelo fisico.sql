@@ -1,5 +1,7 @@
 create database horizonte_turismo;
 
+use horizonte_turismo;
+
 -- Tabela Destino
 CREATE TABLE Destino (
     ID INT PRIMARY KEY,
